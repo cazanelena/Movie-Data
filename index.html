@@ -1,0 +1,58 @@
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie project</title>
+  </head>
+  <body>
+    
+    <section>
+      <h1 class="title">Movie recommentations</h1>
+      <div class="filter">
+        <button class="btn" id="all-movies">Show all Movies</button>
+        <button class="btn" id="rating">Best rated</button>
+        <button class="btn" id="year">Latest Movie</button>
+        <button class="btn" id="runtime">Over 150 minutes</button>
+        <button class="btn" id="add">Add a movie</button>
+      </div>
+      <form class="hidden" id="form">
+        <h2 class="form-title">Add your movie here</h2>
+        <div class="form-group">
+          <label for="movie-user">Movie Title: </label>
+          <input class="input-cell" type="text" name="" id="movie-user" placeholder="Movie title" required/>
+        </div>
+        <div class="form-group">
+          <label for="plot-user">Plot:</label>
+          <input class="input-cell" type="text" name="" id="plot-user" placeholder="Add a short plot" />
+        </div>
+        <div class="form-group">
+          <label for="rating-user">Rating:</label>
+          <input class="input-cell" type="number" name="" id="rating-user" placeholder="Number from 1 - 10" required/>
+        </div>
+        <div class="form-group">
+          <label for="url">Picture Url:</label>
+          <input  class="input-cell" type="text" name="" id="url" placeholder="Add the url movie's picture" required/>
+        </div>
+        <div class="form-group">
+          <label for="year-user">Year:</label>
+          <input class="input-cell" type="number" name="" id="year-user" placeholder="Year released" required min="1900" max="2023" step="1"/>
+        </div>
+        <div class="form-group">
+          <label for="runtime-user">Runtime:</label>
+          <input class="input-cell" type="number" name="" id="runtime-user" placeholder="Runtime in minutes" required min="10" max="2000" step="1"/>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+        
+      </form>
+      <div class="container">
+
+        
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
